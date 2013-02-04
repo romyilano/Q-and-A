@@ -10,6 +10,8 @@
 
 #import "ViewController.h"
 
+#import <sqlite3.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

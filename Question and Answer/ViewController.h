@@ -10,4 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, copy) NSMutableArray *quizItems;
+@property (weak, nonatomic) IBOutlet UILabel *labelQuestion;
+@property (weak, nonatomic) IBOutlet UILabel *labelAnswer;
+
+- (IBAction)btnPressedNextQuestion:(id)sender;
+
+-(NSString *)copyDatabaseToDocuments;
+-(void)readQuizItemsFromDatabaseWithPath:(NSString *)filePath;
+
 @end

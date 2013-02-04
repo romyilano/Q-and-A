@@ -19,6 +19,9 @@
 		1CD937AB16BF3AB4005DC3BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD937AA16BF3AB4005DC3BA /* ViewController.m */; };
 		1CD937AE16BF3AB4005DC3BA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD937AC16BF3AB4005DC3BA /* ViewController_iPhone.xib */; };
 		1CD937B116BF3AB4005DC3BA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD937AF16BF3AB4005DC3BA /* ViewController_iPad.xib */; };
+		1CD937B816BF3AD0005DC3BA /* qanda.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1CD937B716BF3AD0005DC3BA /* qanda.sqlite */; };
+		1CD937BA16BF3ADC005DC3BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD937B916BF3ADC005DC3BA /* libsqlite3.dylib */; };
+		1CD937BD16BF3B24005DC3BA /* QuestionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD937BC16BF3B24005DC3BA /* QuestionItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		1CD937AA16BF3AB4005DC3BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1CD937AD16BF3AB4005DC3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		1CD937B016BF3AB4005DC3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		1CD937B716BF3AD0005DC3BA /* qanda.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = qanda.sqlite; sourceTree = "<group>"; };
+		1CD937B916BF3ADC005DC3BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1CD937BB16BF3B24005DC3BA /* QuestionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionItem.h; sourceTree = "<group>"; };
+		1CD937BC16BF3B24005DC3BA /* QuestionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionItem.m; sourceTree = "<group>"; };
+		1CD937BE16BF3BB5005DC3BA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD937BA16BF3ADC005DC3BA /* libsqlite3.dylib in Frameworks */,
 				1CD9379216BF3AB4005DC3BA /* UIKit.framework in Frameworks */,
 				1CD9379416BF3AB4005DC3BA /* Foundation.framework in Frameworks */,
 				1CD9379616BF3AB4005DC3BA /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +84,7 @@
 		1CD9379016BF3AB4005DC3BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CD937B916BF3ADC005DC3BA /* libsqlite3.dylib */,
 				1CD9379116BF3AB4005DC3BA /* UIKit.framework */,
 				1CD9379316BF3AB4005DC3BA /* Foundation.framework */,
 				1CD9379516BF3AB4005DC3BA /* CoreGraphics.framework */,
@@ -85,12 +95,15 @@
 		1CD9379716BF3AB4005DC3BA /* Question and Answer */ = {
 			isa = PBXGroup;
 			children = (
+				1CD937BE16BF3BB5005DC3BA /* Constants.h */,
 				1CD937A016BF3AB4005DC3BA /* AppDelegate.h */,
 				1CD937A116BF3AB4005DC3BA /* AppDelegate.m */,
 				1CD937A916BF3AB4005DC3BA /* ViewController.h */,
 				1CD937AA16BF3AB4005DC3BA /* ViewController.m */,
 				1CD937AC16BF3AB4005DC3BA /* ViewController_iPhone.xib */,
 				1CD937AF16BF3AB4005DC3BA /* ViewController_iPad.xib */,
+				1CD937BB16BF3B24005DC3BA /* QuestionItem.h */,
+				1CD937BC16BF3B24005DC3BA /* QuestionItem.m */,
 				1CD9379816BF3AB4005DC3BA /* Supporting Files */,
 			);
 			path = "Question and Answer";
@@ -99,6 +112,7 @@
 		1CD9379816BF3AB4005DC3BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1CD937B716BF3AD0005DC3BA /* qanda.sqlite */,
 				1CD9379916BF3AB4005DC3BA /* Question and Answer-Info.plist */,
 				1CD9379A16BF3AB4005DC3BA /* InfoPlist.strings */,
 				1CD9379D16BF3AB4005DC3BA /* main.m */,
@@ -167,6 +181,7 @@
 				1CD937A816BF3AB4005DC3BA /* Default-568h@2x.png in Resources */,
 				1CD937AE16BF3AB4005DC3BA /* ViewController_iPhone.xib in Resources */,
 				1CD937B116BF3AB4005DC3BA /* ViewController_iPad.xib in Resources */,
+				1CD937B816BF3AD0005DC3BA /* qanda.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +195,7 @@
 				1CD9379E16BF3AB4005DC3BA /* main.m in Sources */,
 				1CD937A216BF3AB4005DC3BA /* AppDelegate.m in Sources */,
 				1CD937AB16BF3AB4005DC3BA /* ViewController.m in Sources */,
+				1CD937BD16BF3B24005DC3BA /* QuestionItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
