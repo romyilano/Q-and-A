@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "QuestionsTableViewController.h"
+#import "AddQuestionViewController.h"
 
 #import "Constants.h"
 #import "QuestionItem.h"
@@ -51,6 +52,9 @@
 }
 
 - (IBAction)btnPressedAddQuestion:(id)sender {
+    
+    AddQuestionViewController *addQuestionViewController = [[AddQuestionViewController alloc] init];
+    [[self navigationController] pushViewController:addQuestionViewController animated:YES];
 }
 
 - (IBAction)btnPressedListOfQuestions:(id)sender {
@@ -120,5 +124,7 @@
     }
     sqlite3_close(database);
 }
+
+
 
 @end

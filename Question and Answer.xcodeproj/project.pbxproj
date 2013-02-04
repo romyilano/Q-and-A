@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C90256D16BF7B2100EE70D4 /* cholera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C90256C16BF7B2100EE70D4 /* cholera.png */; };
 		1CD741EC16BF51DB00369122 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD741EA16BF51DB00369122 /* QuestionsTableViewController.m */; };
 		1CD741ED16BF51DB00369122 /* QuestionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD741EB16BF51DB00369122 /* QuestionsTableViewController.xib */; };
 		1CD741F116BF559800369122 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD741EF16BF559800369122 /* AnswerViewController.m */; };
 		1CD741F216BF559800369122 /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD741F016BF559800369122 /* AnswerViewController.xib */; };
+		1CD741F616BF602C00369122 /* AddQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD741F416BF602B00369122 /* AddQuestionViewController.m */; };
+		1CD741F716BF602C00369122 /* AddQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD741F516BF602C00369122 /* AddQuestionViewController.xib */; };
 		1CD9379216BF3AB4005DC3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379116BF3AB4005DC3BA /* UIKit.framework */; };
 		1CD9379416BF3AB4005DC3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379316BF3AB4005DC3BA /* Foundation.framework */; };
 		1CD9379616BF3AB4005DC3BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379516BF3AB4005DC3BA /* CoreGraphics.framework */; };
@@ -29,12 +32,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C90256C16BF7B2100EE70D4 /* cholera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cholera.png; path = images/cholera.png; sourceTree = "<group>"; };
 		1CD741E916BF51DB00369122 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
 		1CD741EA16BF51DB00369122 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
 		1CD741EB16BF51DB00369122 /* QuestionsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsTableViewController.xib; sourceTree = "<group>"; };
 		1CD741EE16BF559800369122 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
 		1CD741EF16BF559800369122 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 		1CD741F016BF559800369122 /* AnswerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
+		1CD741F316BF602B00369122 /* AddQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddQuestionViewController.h; sourceTree = "<group>"; };
+		1CD741F416BF602B00369122 /* AddQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddQuestionViewController.m; sourceTree = "<group>"; };
+		1CD741F516BF602C00369122 /* AddQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddQuestionViewController.xib; sourceTree = "<group>"; };
 		1CD9378E16BF3AB4005DC3BA /* Question and Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Question and Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD9379116BF3AB4005DC3BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1CD9379316BF3AB4005DC3BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +84,7 @@
 		1CD9378516BF3AB4005DC3BA = {
 			isa = PBXGroup;
 			children = (
+				1C90256C16BF7B2100EE70D4 /* cholera.png */,
 				1CD9379716BF3AB4005DC3BA /* Question and Answer */,
 				1CD9379016BF3AB4005DC3BA /* Frameworks */,
 				1CD9378F16BF3AB4005DC3BA /* Products */,
@@ -110,6 +118,9 @@
 				1CD937A116BF3AB4005DC3BA /* AppDelegate.m */,
 				1CD937A916BF3AB4005DC3BA /* ViewController.h */,
 				1CD937AA16BF3AB4005DC3BA /* ViewController.m */,
+				1CD741F316BF602B00369122 /* AddQuestionViewController.h */,
+				1CD741F416BF602B00369122 /* AddQuestionViewController.m */,
+				1CD741F516BF602C00369122 /* AddQuestionViewController.xib */,
 				1CD937AC16BF3AB4005DC3BA /* ViewController_iPhone.xib */,
 				1CD937AF16BF3AB4005DC3BA /* ViewController_iPad.xib */,
 				1CD937BB16BF3B24005DC3BA /* QuestionItem.h */,
@@ -200,6 +211,8 @@
 				1CD937B816BF3AD0005DC3BA /* qanda.sqlite in Resources */,
 				1CD741ED16BF51DB00369122 /* QuestionsTableViewController.xib in Resources */,
 				1CD741F216BF559800369122 /* AnswerViewController.xib in Resources */,
+				1CD741F716BF602C00369122 /* AddQuestionViewController.xib in Resources */,
+				1C90256D16BF7B2100EE70D4 /* cholera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +229,7 @@
 				1CD937BD16BF3B24005DC3BA /* QuestionItem.m in Sources */,
 				1CD741EC16BF51DB00369122 /* QuestionsTableViewController.m in Sources */,
 				1CD741F116BF559800369122 /* AnswerViewController.m in Sources */,
+				1CD741F616BF602C00369122 /* AddQuestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

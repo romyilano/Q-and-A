@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class QuestionItem;
 @interface ViewController : UIViewController
 
 @property (nonatomic, copy) NSMutableArray *quizItems;
