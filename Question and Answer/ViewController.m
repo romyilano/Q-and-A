@@ -12,7 +12,7 @@
 #import <sqlite3.h>
 
 @interface ViewController ()
-
+-(void)displayNewQuestion;
 @end
 
 @implementation ViewController
@@ -32,10 +32,7 @@
     
     [self readQuizItemsFromDatabaseWithPath:filePath];
    
-    QuestionItem *questionItem = [[self quizItems] objectAtIndex:0];
-    
-    self.labelQuestion.text=questionItem.question;
-    self.labelAnswer.text = questionItem.answer;
+    [self displayNewQuestion];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,13 +43,17 @@
 
 #pragma mark-Custom Methods
 - (IBAction)btnPressedNextQuestion:(id)sender {
-    
+   
+    [self displayNewQuestion];
+}
+
+-(void)displayNewQuestion
+{
     int questionNumber = arc4random() % [[self quizItems] count];
     
     QuestionItem *questionItem = [[self quizItems] objectAtIndex:questionNumber];
-    self.labelQuestion.text = questionItem.question;
     self.labelAnswer.text=questionItem.answer;
-    
+    self.labelQuestion.text = questionItem.question;
 }
 
 #pragma mark-Database Methods
