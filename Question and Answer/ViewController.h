@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelAnswer;
 
 - (IBAction)btnPressedNextQuestion:(id)sender;
+- (IBAction)btnPressedAddQuestion:(id)sender;
+- (IBAction)btnPressedListOfQuestions:(id)sender;
 
 -(NSString *)copyDatabaseToDocuments;
 -(void)readQuizItemsFromDatabaseWithPath:(NSString *)filePath;

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CD741EC16BF51DB00369122 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD741EA16BF51DB00369122 /* QuestionsTableViewController.m */; };
+		1CD741ED16BF51DB00369122 /* QuestionsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD741EB16BF51DB00369122 /* QuestionsTableViewController.xib */; };
+		1CD741F116BF559800369122 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD741EF16BF559800369122 /* AnswerViewController.m */; };
+		1CD741F216BF559800369122 /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD741F016BF559800369122 /* AnswerViewController.xib */; };
 		1CD9379216BF3AB4005DC3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379116BF3AB4005DC3BA /* UIKit.framework */; };
 		1CD9379416BF3AB4005DC3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379316BF3AB4005DC3BA /* Foundation.framework */; };
 		1CD9379616BF3AB4005DC3BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD9379516BF3AB4005DC3BA /* CoreGraphics.framework */; };
@@ -25,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CD741E916BF51DB00369122 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
+		1CD741EA16BF51DB00369122 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
+		1CD741EB16BF51DB00369122 /* QuestionsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsTableViewController.xib; sourceTree = "<group>"; };
+		1CD741EE16BF559800369122 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		1CD741EF16BF559800369122 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
+		1CD741F016BF559800369122 /* AnswerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
 		1CD9378E16BF3AB4005DC3BA /* Question and Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Question and Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD9379116BF3AB4005DC3BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1CD9379316BF3AB4005DC3BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +114,12 @@
 				1CD937AF16BF3AB4005DC3BA /* ViewController_iPad.xib */,
 				1CD937BB16BF3B24005DC3BA /* QuestionItem.h */,
 				1CD937BC16BF3B24005DC3BA /* QuestionItem.m */,
+				1CD741E916BF51DB00369122 /* QuestionsTableViewController.h */,
+				1CD741EA16BF51DB00369122 /* QuestionsTableViewController.m */,
+				1CD741EB16BF51DB00369122 /* QuestionsTableViewController.xib */,
+				1CD741EE16BF559800369122 /* AnswerViewController.h */,
+				1CD741EF16BF559800369122 /* AnswerViewController.m */,
+				1CD741F016BF559800369122 /* AnswerViewController.xib */,
 				1CD9379816BF3AB4005DC3BA /* Supporting Files */,
 			);
 			path = "Question and Answer";
@@ -182,6 +198,8 @@
 				1CD937AE16BF3AB4005DC3BA /* ViewController_iPhone.xib in Resources */,
 				1CD937B116BF3AB4005DC3BA /* ViewController_iPad.xib in Resources */,
 				1CD937B816BF3AD0005DC3BA /* qanda.sqlite in Resources */,
+				1CD741ED16BF51DB00369122 /* QuestionsTableViewController.xib in Resources */,
+				1CD741F216BF559800369122 /* AnswerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +214,8 @@
 				1CD937A216BF3AB4005DC3BA /* AppDelegate.m in Sources */,
 				1CD937AB16BF3AB4005DC3BA /* ViewController.m in Sources */,
 				1CD937BD16BF3B24005DC3BA /* QuestionItem.m in Sources */,
+				1CD741EC16BF51DB00369122 /* QuestionsTableViewController.m in Sources */,
+				1CD741F116BF559800369122 /* AnswerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +348,7 @@
 				1CD937B616BF3AB4005DC3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

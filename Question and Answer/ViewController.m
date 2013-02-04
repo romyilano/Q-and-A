@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "QuestionsTableViewController.h"
+
 #import "Constants.h"
 #import "QuestionItem.h"
+
 #import <sqlite3.h>
 
 @interface ViewController ()
@@ -45,6 +48,18 @@
 - (IBAction)btnPressedNextQuestion:(id)sender {
    
     [self displayNewQuestion];
+}
+
+- (IBAction)btnPressedAddQuestion:(id)sender {
+}
+
+- (IBAction)btnPressedListOfQuestions:(id)sender {
+    
+    QuestionsTableViewController *questionsTableViewController = [[QuestionsTableViewController alloc] init];
+    questionsTableViewController.quizItems = self.quizItems;
+    
+    [[self navigationController] pushViewController:questionsTableViewController animated:YES];
+    
 }
 
 -(void)displayNewQuestion
