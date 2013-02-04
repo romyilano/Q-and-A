@@ -22,8 +22,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _quizItems=[[NSMutableArray alloc] init];
     
+    
+    // why does this crash when I do self.quizItems = [[NSMutableArray alloc] init];
+    //  I get
+    // 2013-02-03 17:53:30.625 Question and Answer[2099:c07] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSArrayI addObject:]: unrecognized selector sent to instance 0x894d320'
+    _quizItems=[[NSMutableArray alloc] init];
     NSString *filePath = [self copyDatabaseToDocuments];
     
     [self readQuizItemsFromDatabaseWithPath:filePath];
@@ -40,10 +44,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark-Database Methods
+#pragma mark-Custom Methods
 - (IBAction)btnPressedNextQuestion:(id)sender {
     
+    int questionNumber = arc4random() % [[self quizItems] count];
+    
+    QuestionItem *questionItem = [[self quizItems] objectAtIndex:questionNumber];
+    self.labelQuestion.text = questionItem.question;
+    self.labelAnswer.text=questionItem.answer;
+    
 }
+
+#pragma mark-Database Methods
 
 -(NSString *)copyDatabaseToDocuments
 {
@@ -84,7 +96,7 @@
                 questionItem.question = questionText;
                 questionItem.answer = answerText;
                 
-                NSLog(@"question is %@", questionItem.question);
+               //  NSLog(@"question is %@", questionItem.question);
                [[self quizItems] addObject:questionItem];
             }
         }
